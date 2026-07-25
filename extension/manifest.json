@@ -19,7 +19,10 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "discord-embed-previewer@elnu.com"
+      "id": "discord-embed-previewer@elnu.com",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   },
   "manifest_version": 3
