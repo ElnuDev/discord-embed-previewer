@@ -20,11 +20,11 @@
       };
       packages.${system} = let
         pname = "discord-embed-previewer";
-        version = "1.0.1";
+        version = "1.1.1";
         build = pkgs.buildNpmPackage {
           inherit pname version;
           src = ./.;
-          npmDepsHash = "sha256-icfR6vT9IwKWdTW877HN5AyQXOsyj9qDh4d2T6Me81k=";
+          npmDepsHash = "sha256-gNiyir7wtayEWAawXgzNZqlD/w2D8xNGFUXEBxZNjG8=";
           npmBuildScript = "build";
           installPhase = ''
             runHook preInstall

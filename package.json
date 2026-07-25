@@ -1,6 +1,6 @@
 {
   "name": "discord-embed-previewer",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "private": true,
   "scripts": {
     "build": "cpx \"public/**\" \"public/**\" --clean && rollup -c && cpx extension/**/*.* public",
