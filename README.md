@@ -1,6 +1,6 @@
 # Discord Embed Previewer
 
-[Install on Chrome Web Store](https://chrome.google.com/webstore/detail/discord-embeds/faeojpkidgnhcochgodeklokfimbencc)
+This is a maintained fork of JohnyTheCarrot's [discord-embed-previewer](https://github.com/JohnyTheCarrot/discord-embed-previewer).
 
 ## The problem
 
@@ -29,9 +29,9 @@ Reporting inaccuracies is greatly appreciated.
 
 ## Images
 
-![](https://github.com/JohnyTheCarrot/discord-embed-previewer/blob/main/readme-images/image1.png?raw=true)
-![](https://github.com/JohnyTheCarrot/discord-embed-previewer/blob/main/readme-images/image2.png?raw=true)
-![](https://github.com/JohnyTheCarrot/discord-embed-previewer/blob/main/readme-images/image3.png?raw=true)
+![](readme-images/image1.png)
+![](readme-images/image2.png)
+![](readme-images/image3.png)
 
 ## Browser Support
 I currently support Firefox and Chrome.
@@ -39,10 +39,13 @@ Any browser that is based on either should theoretically work.
 
 ## Building
 
-1. Install node.js, known to work on v22.11.0
-2. Install pnpm, `npm install -g pnpm` (technically you can use npm or yarn, but I use pnpm)
-3. Clone the repository
-4. Run `pnpm install`
-5. Run `pnpm build`, alternatively use `pnpm dev` for automatic rebuilding on file changes.
-6. The built extension will be in the `public` folder.
-7. Load the extension in your respective browser. Look up how to do this for your browser.
+A [Nix](https://nixos.org) flake is available for reproducible builds. Run `nix develop` then `nix build` to built the extension; output files will be stored in the `result` folder.
+
+If you do not have Nix available, do the following.
+
+1. Install node.js, known to work on v24.18.0
+2. Clone the repository
+3. Run `npm install`
+4. Run `npm build`
+5. The built extension will be in the `public` folder.
+6. Load the extension in your respective browser. Look up how to do this for your browser.
